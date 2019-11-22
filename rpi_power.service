@@ -1,0 +1,9 @@
+[Unit]
+Description=Rust Powering raspberry pi
+[Service]
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/rpi_power
+ExecStart=/home/pi/rpi_power/target/release/rpi_power
+[Install]
+WantedBy=multi-user.target
